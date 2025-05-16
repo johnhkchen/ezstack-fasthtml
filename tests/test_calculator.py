@@ -1,5 +1,5 @@
 import pytest
-from water_bot.utils.calculator import add, subtract, multiply, divide
+from app.utils.calculator import add, subtract, multiply, divide
 
 
 def test_add():

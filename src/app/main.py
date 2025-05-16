@@ -5,7 +5,7 @@ import dagger
 from dagger import DefaultPath, dag, function, object_type
 
 @object_type
-class WaterBot:
+class App:
     @function
     def container_echo(self, string_arg: str) -> dagger.Container:
         """Returns a container that echoes whatever string argument is provided"""

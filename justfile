@@ -1,8 +1,14 @@
-init:
+venv:
+    uv venv
+
+activate:
+    source .venv/bin/activate
+
+sync:
     uv sync
 
 start:
-    uv run src/water_bot/main.py
+    uv run src/app/main.py
 
 up:
     dagger -c "build | as-service | up --ports=5001:5001"
@@ -10,3 +16,5 @@ up:
 test:
     uv run pytest -v
 
+e2e:
+    dagger -c "test"

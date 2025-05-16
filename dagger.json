@@ -1,5 +1,5 @@
 {
-  "name": "water-bot",
+  "name": "app",
   "engineVersion": "v0.18.8",
   "sdk": {
     "source": "python"
