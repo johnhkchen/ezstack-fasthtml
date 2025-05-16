@@ -36,7 +36,7 @@ class App:
             .with_env_variable("HOST", "0.0.0.0")
             .with_env_variable("PORT", "5001")
             .with_exposed_port(5001)
-            .with_entrypoint(["uv", "run", "src/water_bot/main.py"])
+            .with_entrypoint(["uv", "run", "src/app/main.py"])
         )
         
     @function
